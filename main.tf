@@ -8,13 +8,13 @@ terraform {
   required_version = ">= 1.2.0"
   
   cloud { 
-    hostname     = "tfcdev-95263f23.ngrok.app" 
-    organization = "local-setup" 
+    hostname = "tfcdev-95263f23.ngrok.app" 
+    organization = "hashicorp" 
 
     workspaces { 
       name = "new-ws" 
     } 
-  }
+  } 
 }
 
 provider "local" {
