@@ -12,7 +12,7 @@ terraform {
     organization = "local-setup" 
 
     workspaces { 
-      name = "agnet-test-ws" 
+      name = "new-ws" 
     } 
   }
 }
@@ -26,7 +26,7 @@ module "dummy_file" {
   
   file_content = var.file_content
   file_path    = "${path.module}/${var.file_name}"
-}ßß
+}
 
 # Create another dummy file with different content
 module "another_dummy_file" {
