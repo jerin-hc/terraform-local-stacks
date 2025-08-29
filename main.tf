@@ -26,12 +26,12 @@ module "dummy_file" {
   
   file_content = var.file_content
   file_path    = "${path.module}/${var.file_name}"
-}
+}ßß
 
 # Create another dummy file with different content
 module "another_dummy_file" {
   source = "./modules/local_files"
   
-  file_content = "This is another dummy file with different content"
+  file_content = "This is another dummy file with new different content"
   file_path    = "${path.module}/another-${var.file_name}"
 }
