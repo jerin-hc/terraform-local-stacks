@@ -26,3 +26,15 @@ module "prod_data" {
   file_content = "This contains production data"
   file_path    = "${path.module}/prod-data.txt"
 }
+
+output "prod_message" {
+  value = "Hello from PROD stack 🚀"
+}
+
+output "prod_config_path" {
+  value = module.prod_config.file_path
+}
+
+output "prod_data_path" {
+  value = module.prod_data.file_path
+}
